@@ -1,0 +1,39 @@
+{
+  "name": "smart-wallet-poc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "compile": "hardhat compile",
+    "deploy:base": "cross-env TS_NODE_PROJECT=./tsconfig.hardhat.json hardhat run --network baseMainnet scripts/deploy.ts"
+  },
+  "dependencies": {
+    "@simplewebauthn/browser": "^10.0.0",
+    "cborg": "^1.10.2",
+    "lucide-react": "^0.294.0",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "viem": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@types/node": "^20.19.25",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.16",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.51.0",
+    "eslint-config-next": "^14.0.0",
+    "ethers": "^6.9.0",
+    "hardhat": "^2.19.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
